@@ -1,0 +1,254 @@
+body {
+    background: linear-gradient(to left, #283593, #1976d2);
+  }
+
+.card-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card {
+    position: relative;
+    height: 370px;
+    width: 650px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);  /* This will produce the blur */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .logo ,
+  .logo1 ,
+  .chip ,
+  .number,
+  .name,
+  .name1,
+  .name2,
+  .name3,
+  .name4,
+  .from,
+  .to,
+  .ring {
+    position: absolute; /* All items inside card should have absolute position */
+  }
+  
+  .logo  {
+    font-size: 60px;
+    top: 55px;
+    right: 230px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+  }
+  .logo1  {
+    font-size: 20px;
+    top: 130px;
+    right: 150px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .chip  {
+    font-size: 50px;
+    top: 70px;
+    left: 40px;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .number,
+  .name,
+  .name1,
+  .name2,
+  .name3,
+  .name4,
+  .from,
+  .to {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .number {
+    font-size: 20px;
+    left: 40px;
+    top: 0px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .name {
+    font-size: 20px;
+    left: 40px;
+    bottom: 150px;
+  }
+  .name1 {
+    font-size: 20px;
+    left: 40px;
+    bottom: 120px;
+  }
+  .name2 {
+    font-size: 20px;
+    left: 40px;
+    bottom: 90px;
+  }
+  .name3 {
+    font-size: 20px;
+    left: 40px;
+    bottom: 60px;
+  }
+  .name4 {
+    font-size: 20px;
+    left: 40px;
+    bottom: 30px;
+  }
+  .from {
+    font-size: 0.5rem;
+    bottom: 35px;
+    right: 110px;
+  }
+  
+  .to {
+    font-size: 0.5rem;
+    bottom: 35px;
+    right: 40px;
+  }
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(#006db3, #29b6f6);
+  }
+  .circles {
+    position: absolute;
+    height: 270px;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle-1 {
+    height: 180px;
+    width: 180px;
+    top: -50px;
+    left: -60px;
+  }
+  .circle-2 {
+    height: 200px;
+    width: 200px;
+    bottom: -90px;
+    right: -90px;
+    opacity: 0.8;
+  }
+  .ring {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: transparent;
+    border: 50px solid rgba(255, 255, 255, 0.1);
+    bottom: -250px;
+    right: -250px;
+    box-sizing: border-box;
+  }
+  
+  .ring::after {
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: transparent;
+    border: 30px solid rgba(255, 255, 255, 0.1);
+    bottom: -80px;
+    right: -110px;
+    box-sizing: border-box;
+  }
+  .input {
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+  }
+  .input *:not(span) {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 0.325em;
+    z-index: 1;
+  }
+  .input *:not(span):focus + span {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .input span {
+    transform: scale(0.993, 0.94);
+    transition: transform 0.5s, opacity 0.25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
+  }
+  
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    font-size: 1em;
+  }
+  
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  input {
+    font-family: inherit;
+    line-height: inherit;
+    color: #2e3750;
+    min-width: 12em;
+  }
+  
+  ::-moz-placeholder {
+    color: #cbd0d5;
+  }
+  
+  :-ms-input-placeholder {
+    color: #cbd0d5;
+  }
+  
+  ::placeholder {
+    color: #cbd0d5;
+  }
+  
+  html::after {
+    content: "";
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
