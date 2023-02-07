@@ -11,16 +11,17 @@ body {
   
   .card1 {
     position: relative;
-    height: 370px;
-    width: 650px;
+    height: auto;
+    width: auto;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);  /* This will produce the blur */
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    /* overflow: hidden; */
+    padding: 30px;
   }
-  
+
   .logo ,
   .logo1 ,
   .chip ,
@@ -33,18 +34,28 @@ body {
   .from,
   .to,
   .ring {
-    position: absolute; /* All items inside card should have absolute position */
+   /* position: absolute;  All items inside card should have absolute position */
   }
   
   .logo  {
     font-size: 60px;
     top: 55px;
     right: 230px;
-    width: 80px;
+    width: auto;
     height: auto;
     opacity: 0.8;
   }
   .logo1  {
+    font-size: 40px;
+    font-weight: 500px;
+    top: 130px;
+    right: 150px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  .logo2  {
     font-size: 20px;
     top: 130px;
     right: 150px;
