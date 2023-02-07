@@ -2,14 +2,14 @@ body {
     background: linear-gradient(to left, #283593, #1976d2);
   }
 
-.card-group {
+.card-group1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   
-  .card {
+  .card1 {
     position: relative;
     height: 370px;
     width: 650px;
