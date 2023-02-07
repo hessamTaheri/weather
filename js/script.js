@@ -18,7 +18,9 @@ function Enter(e) {
         let cityHumidity = data.main.humidity;
         let citytimeZone = data.timezone;
         let cityVisibility = data.visibility/1000;
-console.log(data)
+        var iconcode = data.weather[0].icon;
+        var iconcodeicon = "http://openweathermap.org/img/w/" + iconcode + ".png";
+console.log(iconcode)
         let cityNameShow = (document.getElementById(
           "city"
         ).innerHTML = `${cityName.value}`);
@@ -34,6 +36,9 @@ console.log(data)
         let citystatusShow = (document.getElementById(
           "status"
         ).innerHTML = `${citystatus}`);
+        let citystatusiconShow = (document.getElementById(
+          "wicon"
+        ).setAttribute("src", `${iconcodeicon}`))
 
         let cityWindShow = (document.getElementById(
           "wind"
