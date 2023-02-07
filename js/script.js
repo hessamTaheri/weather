@@ -17,8 +17,8 @@ function Enter(e) {
         let cityWindSpeed = data.wind.speed;
         let cityHumidity = data.main.humidity;
         let citytimeZone = data.timezone;
-        let cityVisibility = data.wind.speed;
-
+        let cityVisibility = data.visibility/1000;
+console.log(data)
         let cityNameShow = (document.getElementById(
           "city"
         ).innerHTML = `${cityName.value}`);
@@ -51,7 +51,7 @@ function Enter(e) {
 
         let cityVisibilityShow = (document.getElementById(
           "visibility"
-        ).innerHTML = `Visibility : ${cityVisibility} Km`);
+        ).innerHTML = `visibility : ${cityVisibility} Km`);
       })
       .catch(() => {
         msg.textContent = "Please search for a valid city ?";
