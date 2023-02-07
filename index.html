@@ -15,28 +15,34 @@
 </head>
 
 <body>
-    <p class="number">Enter the name of the city you want to know about its weather</p>
-    <div class="card-group1">
+    <div class="card-group1 my-4">
         <div class="circles">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
         </div>
         <div class="card1">
+            <p class="number">Enter the name of the city you want to know about its weather</p>
             <p>
                 <span class="input">
                     <input placeholder="Enter the name of the city" type="text">
                     <span></span>
                 </span>
             </p>
-            <div class="logo" id="temperature">temperature</div>
-            <div class="logo1" id="temperaturefeels">temperaturefeels</div>
-            <div class="chip" id="city">city</div>
-            <div class="number"></div>
-            <div class="name" id="status">Weather status</div>
-            <div class="name1" id="wind">Wind status</div>
-            <div class="name2" id="humidity">Humidity status</div>
-            <div class="name3" id="timezone">time zone</div>
-            <div class="name4" id="visibility">Visibility status</div>
+            <div class="row">
+                <div class="col-md-6 col-12 order-md-last">
+                    <div class="logo1" id="temperature">temperature</div>
+                    <div class="logo2" id="temperaturefeels">temperature feels</div>
+                </div>
+                <div class="col-md-6 col-12 order-md-first">
+                    <div class="chip" id="city">city</div>
+                    <div class="number"></div>
+                    <div class="name" id="status">Weather status</div>
+                    <div class="name1" id="wind">Wind status</div>
+                    <div class="name2" id="humidity">Humidity status</div>
+                    <div class="name3" id="timezone">time zone</div>
+                    <div class="name4" id="visibility">Visibility status</div>
+                </div>
+            </div>
             <!-- <div class="from">10/19</div>
             <div class="to">06/21</div>
             <div class="ring"></div> -->
