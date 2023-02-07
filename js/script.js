@@ -39,6 +39,9 @@ console.log(iconcode)
         let citystatusiconShow = (document.getElementById(
           "wicon"
         ).setAttribute("src", `${iconcodeicon}`))
+        let citystatusiconHideToShow = (document.getElementById(
+          "icon"
+        ).setAttribute("style", ""))
 
         let cityWindShow = (document.getElementById(
           "wind"
