@@ -33,9 +33,9 @@ body {
   .name4,
   .from,
   .to,
-  .ring {
-   /* position: absolute;  All items inside card should have absolute position */
-  }
+  .ring /*{
+    position: absolute;  All items inside card should have absolute position 
+  }*/
   
   .logo  {
     font-size: 60px;
